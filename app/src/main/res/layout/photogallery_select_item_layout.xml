@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_select_mainlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp" >
+
+    <com.example.pappu.memotape.album.FrameRound
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/photoselect_gallary_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/photoselect_gallary_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </com.example.pappu.memotape.album.FrameRound>
+
+    <RelativeLayout
+        android:id="@+id/photo_select_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/studio_selection" />
+    </RelativeLayout>
+
+</RelativeLayout>

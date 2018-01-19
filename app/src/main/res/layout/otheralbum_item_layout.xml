@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <com.example.pappu.memotape.album.FrameRound
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallary_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/photogallary_imageview"
+            android:layout_width="@dimen/grid_view_item_height"
+            android:layout_height="@dimen/grid_view_item_height"
+            android:layout_centerInParent="true" />
+
+        <View
+            android:layout_width="@dimen/grid_view_item_height"
+            android:layout_height="@dimen/grid_view_item_height"
+            android:layout_centerInParent="true"
+            android:background="#7F000000" />
+
+        <TextView
+            android:id="@+id/photocount_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="#FFFF00"
+            android:textSize="12pt" />
+
+        <ImageView
+            android:id="@+id/gray_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/photogallary_imageview"
+            android:background="@drawable/common_selection" />
+    </com.example.pappu.memotape.album.FrameRound>
+
+    <TextView
+        android:id="@+id/phottitle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallary_layout"
+        android:layout_centerHorizontal="true"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:text="Title"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

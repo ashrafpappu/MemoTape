@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/album_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_bg" >
+
+    <RelativeLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:clickable="true"
+        android:paddingBottom="@dimen/bottom_margin"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingRight="@dimen/right_margin"
+        android:paddingTop="@dimen/top_margin" >
+
+        <TextView
+            android:id="@+id/studio_album_camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Song"
+            android:textColor="@android:color/white"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Album"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/studio_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:text="createVideo"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_upper_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:clickable="true"
+        android:paddingBottom="@dimen/bottom_margin"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingRight="@dimen/right_margin"
+        android:paddingTop="@dimen/top_margin"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/upper_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:text="cancel"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/item" >
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/yellow_circle" />
+
+            <TextView
+                android:id="@+id/select_count_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="item"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/choseall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:text="choose"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/center_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/album_bottom_layout"
+        android:layout_below="@+id/upper_layout"
+        android:layout_centerInParent="true"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:id="@+id/select_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:background="@null"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="delete"
+            android:textColor="@color/colorYellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/album_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bottom_margin">
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
