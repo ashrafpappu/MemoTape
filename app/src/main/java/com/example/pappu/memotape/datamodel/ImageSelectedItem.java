@@ -8,9 +8,10 @@ public class ImageSelectedItem {
     public int iconImageResourceId;
     public int position;
     public String xmlFileName;
+    public MediaStoreImage mediaStoreImage;
 
-    public ImageSelectedItem(int iconImageResourceId, int position) {
-        this.iconImageResourceId = iconImageResourceId;
+    public ImageSelectedItem(MediaStoreImage mediaStoreImage, int position) {
+        this.mediaStoreImage = mediaStoreImage;
         this.position = position;
     }
 

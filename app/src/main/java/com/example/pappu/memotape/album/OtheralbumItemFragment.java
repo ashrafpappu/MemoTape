@@ -18,6 +18,7 @@ import com.example.pappu.memotape.Utility.AppUtils;
 import com.example.pappu.memotape.Utility.RingStudio;
 import com.example.pappu.memotape.activity.AlbumFragmentActvity;
 import com.example.pappu.memotape.adapter.PhotoSelectAdapter;
+import com.example.pappu.memotape.datamodel.ImageSelectedItem;
 import com.example.pappu.memotape.datamodel.MediaStoreImage;
 import com.example.pappu.memotape.datamodel.MediaStoreImageHelper;
 
@@ -89,10 +90,14 @@ public class OtheralbumItemFragment extends android.support.v4.app.Fragment
 
 
 		MediaStoreImage mediaStoreImage = mediaStoreImagelist.get(position);
-		Bitmap bitmap = MediaStoreImageHelper.getInstance(this.getContext()).getMediaStoreAlbumImage(
-				mediaStoreImage.imageId);
+		ImageSelectedItem imageSelectedItem = new ImageSelectedItem(mediaStoreImage,position);
 
-		Log.d("AlbumFragment","ok>>>>>>>>>"+mediaStoreImage.imageId+"    "+bitmap.getWidth()+"   "+bitmap.getHeight());
+		((AlbumFragmentActvity) (getActivity())).addImageOnPhotoSelectionList(imageSelectedItem);
+
+//		Bitmap bitmap = MediaStoreImageHelper.getInstance(this.getContext()).getMediaStoreAlbumImage(
+//				mediaStoreImage.imageId);
+//
+//		Log.d("AlbumFragment","ok>>>>>>>>>"+mediaStoreImage.imageId+"    "+bitmap.getWidth()+"   "+bitmap.getHeight());
 
 
 	}

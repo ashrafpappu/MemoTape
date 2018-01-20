@@ -142,7 +142,31 @@
         android:background="@null"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/bottom_margin">
+        <LinearLayout
+            android:id="@+id/image_selection_recylce_view_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_centerVertical="true">
 
+
+            <ImageView
+                android:id="@+id/frame_selection_panel_no_frame_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/toolbar_icon_margin_left"
+                android:background="@drawable/bottom_toolbar_panel_fixed_icon_bg"
+                android:src="@drawable/none" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/image_selection_recylce_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
 
     </RelativeLayout>
 

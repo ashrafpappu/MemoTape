@@ -14,7 +14,7 @@ import android.util.TypedValue;
 import android.widget.RelativeLayout;
 
 public class FrameRound extends RelativeLayout {
-    private final static float CORNER_RADIUS = 10.0f;
+    private final static float CORNER_RADIUS = 8.0f;
 
     private Bitmap maskBitmap;
     private Paint paint, maskPaint;
